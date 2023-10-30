@@ -1,3 +1,4 @@
+// создание объекта с данными о посылке (база данных)
 let packageInfo = {
   id: "1432HGF",
   codeNumber: "A001DFX0",
@@ -5,6 +6,7 @@ let packageInfo = {
   cost: 100,
 };
 
+// тестовые данные
 let testCodeNumber = "A001DFX0";
 let pochtamat = [null, null, null, "1432HGF", null];
 let wallet = 500;

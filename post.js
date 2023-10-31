@@ -11,6 +11,11 @@ let testCodeNumber = "A001DFX0";
 let pochtamat = [null, null, null, "1432HGF", null];
 let wallet = 500;
 
+// проверяем наличие посылки в почтамате
+console.log(pochtamat.includes(packageInfo.id))
+
+// В условии проверьте, если  код  получения этой посылки в базе данных равен коду из смс, 
+// то выдаем посылку - списываем средства
 if ((packageInfo.codeNumber === testCodeNumber)) {
   newBalance = wallet - packageInfo.cost;
   console.log(
